@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class FocusedInput extends Component {
+class FocusedInputOnComponentDidMount extends Component {
 	componentDidMount() {
 		if (this.input) this.input.focus();
 	}
@@ -8,7 +8,7 @@ class FocusedInput extends Component {
 	render() {
 		return (
 			<div>
-				{this.props.children}{' '}
+				{this.props.children}
 				<input
 					type='text'
 					ref={(node) => {
@@ -20,4 +20,4 @@ class FocusedInput extends Component {
 	}
 }
 
-export default FocusedInput;
+export default FocusedInputOnComponentDidMount;

@@ -1,10 +1,11 @@
 import React from 'react';
-import { FocusedInput } from './Input';
+import { FocusedInputOnComponentDidMount, FocusedInputOnButtonClick } from './Input';
 
 const App = () => (
 	<div>
 		<h4>Advanced Component</h4>
-		<FocusedInput>An input with focus</FocusedInput>
+		<FocusedInputOnComponentDidMount>An input with focus on component did mount</FocusedInputOnComponentDidMount>
+		<FocusedInputOnButtonClick>An input with focus on button click</FocusedInputOnButtonClick>
 	</div>
 );
 
